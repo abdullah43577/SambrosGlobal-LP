@@ -35,8 +35,8 @@ To run the project locally, please follow these steps:
 2.  Navigate to the project directory
     `cd sambros-global-designs`
 
-3.  Initiate the live server
-    `npm run start`
+3.  Initiate the live server either by clicking the button in your vscode user interface or executing the code below in the terminal
+    `live-server`
 
 ### Usage
 
