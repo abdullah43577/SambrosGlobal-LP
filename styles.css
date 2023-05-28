@@ -1,5 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+}
+
+:root {
+  --background: #f3f3f3;
+  --gradient: linear-gradient(to top right, #bedef0, #7ab5f3);
+  --test3: #96c3f4;
+  --test2: #0e1216;
+  --span: #0d7cd8;
+  --text: #242121;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: var(--background);
+}
+
+nav {
+  margin-inline: auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+span {
+  color: var(--span);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links ul {
+  display: flex;
+}
+
+li.active {
+  text-decoration: underline;
+}
+
+.nav-links ul li a {
+  padding: 0 8px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* hero section */
+#hero {
+  width: 100%;
+  height: 90vh;
+  background: var(--gradient);
+  display: flex;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.left-component h2 {
+  letter-spacing: 5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.left-component p {
+  padding-block: 16px;
+}
+
+.left-component,
+.right-component {
+  max-width: 50%;
+}
+
+button {
+  padding: 4px 8px;
+  cursor: pointer;
+  background: transparent;
+  font-weight: 500;
+}
+
+.shop-btn {
+  border: 1px solid var(--span);
 }
